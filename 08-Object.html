@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-Objects</title>
+</head>
+<body>
+     
+
+    <script>
+          //const obj = {
+          //  naem:'sock',
+          //  price:1090
+          //};
+
+          //console.log(obj);
+          //console.log(obj.naem);
+          //console.log(obj.price);
+          //obj.naem = 'shooes';
+          //obj.name = 'kohli';
+          //console.log(obj);
+          //delete obj.naem;
+          //console.log(obj); 
+
+          const p={
+            name:'shirt',
+            'delivery-time':'1-day',
+            rating:{
+                star:4.5,
+                count:67
+            },
+            fun: function f1(){
+                console.log('how ');
+            }
+          }
+
+          console.log(p);
+          console.log(p['delivery-time']);
+            console.log(p.rating.count);
+          p.fun();
+
+          //buit in object
+          //JSON
+          JSON.stringify(p);
+          
+          console.log( JSON.stringify(p));
+          console.log(typeof JSON.stringify(p));
+          let JSONstring = JSON.stringify(p);
+          let p1 = JSON.parse(JSONstring);
+          console.log(p);
+          console.log(JSONstring);
+          console.log(p1);
+    </script> 
+</body>
+</html>
